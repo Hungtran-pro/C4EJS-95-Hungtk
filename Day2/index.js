@@ -1,1 +1,0 @@
-console.log("Hu' ha hu' hi'");
