@@ -1,28 +1,11 @@
-console.log('hu ha hu hi');
+let a = prompt("Enter a number:");
 
-let a = 10;
-let day;
-switch (a) {
-    case 0:
-      day = "Sunday";
-      break;
-    case 1:
-      day = "Monday";
-      break;
-    case 2:
-       day = "Tuesday";
-      break;
-    case 3:
-      day = "Wednesday";
-      break;
-    case 4:
-      day = "Thursday";
-      break;
-    case 5:
-      day = "Friday";
-      break;
-    case 6:
-      day = "Saturday";
-    default: day ="NaD";
-  }
-console .log(day);
+for(let i = 1; i <= a ; i++ )  {
+  console.log(i);
+}
+
+let password = prompt('Enter a password');
+while( password.length <= 6 || password.length >= 20) {
+  password = prompt('Rename?');
+}
+console.log(password);
