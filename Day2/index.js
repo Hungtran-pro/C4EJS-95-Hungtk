@@ -4,50 +4,50 @@ for(let i = 0; i < 7; i++) {
 }
 
 // 3b
-let n = prompt('Enter a number?');
-for(let i = 0; i < n; i++) {
+let n_number = prompt('Enter a number?')-0;
+for(let i = 0; i < n_number; i++) {
   console.log(i);
 }
 
 // 3c
-n = prompt('Enter n');
-for(let i = 3; i < n; i++) {
+n_number = prompt('Enter n')-0;
+for(let i = 3; i < n_number; i++) {
   console.log(i);
 }
 
 //3d
-n = prompt('Enter n');
-let c = prompt('Enter c');
-for(let i = c; i < n; i++) {
+n_number = prompt('Enter n')-0;
+let c_number = prompt('Enter c')-0;
+for(let i = c_number; i < n_number; i++) {
   console.log(i);
 }
 
 // 3e
-n = prompt('Enter n');
-c = prompt('Enter c');
-for(let i = c; i < n; i+=3) {
+n_number = prompt('Enter n')-0;
+c_number = prompt('Enter c')-0;
+for(let i = c_number; i < n_number; i += 3) {
   console.log(i);
 }
 
 // 3f
-n = prompt('Enter n');
-c = prompt('Enter c');
-let s = prompt('Enter s');
-for(let i = c; i < n; i+=s) {
+n_number= prompt('Enter n')-0;
+c_number = prompt('Enter c')-0;
+let s_number = prompt('Enter s')-0;
+for(let i = c_number; i < n_number; i += s_number) {
   console.log(i);
 }
 
 // 4
 let sum = 1;
-n = prompt('Enter n: (n > 0)');
-for(let i = 1; i <= n; i++) {
+n_number = prompt('Enter n: (n > 0)')-0;
+for(let i = 1; i <= n_number; i++) {
   sum *= i;
 }
-confirm('The factorial of' + n + 'is' + sum);
+confirm('The factorial of ' + n + ' is ' + sum);
 
 //5
 
-let age_user = prompt('How old are you?');
+let age_user = prompt('How old are you?')-0;
 if(age_user > 14) {
   alert('Enjoy.');
 }
@@ -57,8 +57,8 @@ else {
 
 //6
 
-let x_value = prompt('Enter a number');
-if(x_value < 5) {
+let x_value = prompt('Enter a number')-0;
+if(x_value < 4.5) {
   confirm('Lower half of 9');
 }
 else {
@@ -67,7 +67,7 @@ else {
 
 //7
 
-let n_value = prompt('n = ');
+let n_value = Number(prompt('n = '));
 x_value = prompt('x = ');
 if(x_value < n_value / 2) {
   confirm(x_value + ' is in lower half of ' + n_value);
@@ -78,7 +78,7 @@ else {
 
 //8
 
-x_value = prompt('x = ');
+x_value = prompt('x = ')-0;
 if(x_value % 2) {
   confirm( x_value + ' is an odd number');
 }
@@ -96,12 +96,12 @@ for(let i = 0; i < 3; i++) {
 }
 
 //9b
-n = prompt("Enter a total number of L's and H's");
+n_number = prompt("Enter a total number of L's and H's")-0;
 
-for(let i = 0; i < n/2; i++) {
+for(let i = 0; i < n_number/2; i++) {
   console.log('L');
 }
-for(let i = n/2; i < n; i++) {
+for(let i = n/2; i < n_number; i++) {
     console.log('H');
 }
 
@@ -112,35 +112,30 @@ for(let i = 0; i < 4; i++) {
 }
 
 //9d
-n = prompt("Enter a total number of 0's and 1's");
-for(let i = 0; i < n/2; i++) {
+n_number = prompt("Enter a total number of 0's and 1's")-0;
+for(let i = 0; i < n_number/2; i++) {
   console.log(0);
-  if(++i < n) {
+  if(++i < n_number) {
     console.log(1);
   }
 }
 
 //10
 
-// let user_weight = prompt("Your weight in kg?");
-// let user_height = prompt("Your height in cm?");
-// let BMI = user_weight/(user_height*user_height);
-// confirm("Your BMI is " + BMI);
-// switch(BMI){
-//   case BMI < 16 :
-//   alert("You are severely underweight");
-//   break;
-//   case BMI < 18.5:
-//     alert("You are underweight");
-//     break;
-//   case BMI < 25:
-//     alert("You are normal");
-//     break;
-//   case BMI < 30:
-//     alert("You are overweight");
-//     break;
-//   default:
-//     alert("You are Obese");
-// }
+let user_weight = prompt("Your weight in kg?")-0;
+let user_height = prompt("Your height in cm?")-0;
+let BMI = user_weight/(user_height*user_height);
+confirm("Your BMI is: " + BMI);
+  if (BMI < 16)
+  alert("You are severely underweight");
+  else if (BMI < 18.5)
+    alert("You are underweight");
+  else if (BMI < 25)
+    alert("You are normal");
+  else if (BMI < 30)
+    alert("You are overweight");
+  else
+    alert("You are Obese");
+
 
 //11
