@@ -15,7 +15,7 @@ confirm('Hi! ' + name);
 let firstName = prompt('Enter your first name: ');
 let lastName = prompt('Enter your last name: ');
 confirm('Hi! ' + firstName + lastName);
-let dimensionSquare = prompt('Enter side length of the square: ');
+let dimension = prompt('Enter side length of the square: ');
 confirm('The square of area: ' + dimension ** 2);
 let radius = prompt('Enter the radius of the circle: ');
 confirm('The circle area is: ' + radius * 3.14);
