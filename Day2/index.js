@@ -43,7 +43,7 @@ n_number = prompt('Enter n: (n > 0)')-0;
 for(let i = 1; i <= n_number; i++) {
   sum *= i;
 }
-confirm('The factorial of ' + n + ' is ' + sum);
+confirm('The factorial of ' + n_number + ' is ' + sum);
 
 //5
 
@@ -59,10 +59,10 @@ else {
 
 let x_value = prompt('Enter a number')-0;
 if(x_value < 4.5) {
-  confirm('Lower half of 9');
+  confirm('The number is lower half of 9');
 }
 else {
-  confirm('Higher half of 9');
+  confirm('The number is higher half of 9');
 }
 
 //7
@@ -98,10 +98,10 @@ for(let i = 0; i < 3; i++) {
 //9b
 n_number = prompt("Enter a total number of L's and H's")-0;
 
-for(let i = 0; i < n_number/2; i++) {
+for(let i = 0; i < Math.round(n_number/2); i++) {
   console.log('L');
 }
-for(let i = n/2; i < n_number; i++) {
+for(let i = Math.round(n_number/2); i < n_number; i++) {
     console.log('H');
 }
 
