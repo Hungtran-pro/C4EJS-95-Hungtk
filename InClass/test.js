@@ -1,29 +1,22 @@
-// const n_bills = Number(prompt('Enter n bills:'));
-// const TotalBill = [];
-// const Tip = [];
-// for(let i = 0; i < n_bills; i++){
-//     TotalBill.push(Number(prompt(`Enter the price of bill ${i+1}:`)));
-//     while(TotalBill[TotalBill.length-1] <= 0){
-//         TotalBill.pop();
-//         TotalBill.push(Number(prompt(`Enter the price of bill ${i+1}:`)));  
-//     }
-// }
-// for(let i = 0; i < n_bills; i++){
-//     if(TotalBill[i] < 50) {
-//         Tip[i] = TotalBill[i] * 0.2;
-//     }
-//     else if(TotalBill[i] < 200) {
-//         Tip[i] = TotalBill[i] * 0.15;
-//     }
-//     else Tip[i] = TotalBill[i] * 0.1;
-// }
+let objectUser = {
+    debug: 'The process of figuring out why your program has a certain error and how to fix it',
+    done: 'When your task is complete, the only thing you have to do is to wait for users to use it (no additional codes or actions needed)',
+    defeat: 'The formal word for error',
+    pm: 'The shoer version of Project Manager, the person in charge of the final result of a project',
+    uiux: 'UI means User Interface, UX means User Experience, are the process to define how your products look and feel'
+};
 
-// for(let i = 0; i < n_bills; i++){
-//     confirm(Tip[i]);
-// }
-// for(let i = 0; i < n_bills; i++){
-//     confirm(TotalBill[i]+Tip[i]);
-// }
-
-let a = ['a', 'b', 'c'];
-alert(...a);
+alert('Hi there, this is dev dictionary.');
+let keyword = prompt('Enter a keyWord.');
+if(objectUser[keyword]) {
+    alert(`${keyword}\n${objectUser[keyword]}`);
+}
+else {
+    let newTerm = prompt(`We could NOT find "${keyword}", leave your explanation`);
+    while(!newTerm){
+        newTerm = prompt('Do not leave a blank, please enter your explanation again');
+    }
+    objectUser[keyword] = newTerm;
+    alert(`${keyword}\n${objectUser[keyword]}`);
+    alert('Done!');
+}
