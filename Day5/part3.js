@@ -1,3 +1,23 @@
+// const LISTOFWORDS = ['to', 'be', 'that', 'of', 'elon', 'to', 'this', 'now', 'back', 'cool', 'hey', 'love', 'of', 'life', 'that', 'rain', 'summer', 'color', 'now', 'of', 'hat', 'late', 'sorry', 'my', 'team'];
+// const len = LISTOFWORDS.length;
+// let check = [];
+// for(let i = 0; i < len; i++) {
+//     check[i] = 0;
+// }
+// for(let i = 0; i < len; i++) {
+//     let count = 1;
+//     if(check[i] === 0){
+//         for(let j = i + 1; j < len; j++) {
+//             if(LISTOFWORDS[i] === LISTOFWORDS[j]){
+//                 check[j] = 1;
+//                 count++;
+//             }
+//         }
+//         console.log(`${LISTOFWORDS[i]}: ${count}`);
+//         check[i] = 1;
+//     }
+// }
+
 const inventory = [
     {
         name: 'HP Envy 13aq',
