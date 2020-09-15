@@ -32,4 +32,105 @@ New file -> name: [name].html
 <tr> </tr>
 <td> </td>
 
-//5. 
+//5. Các thẻ định dạng chữ viết và văn bản.
+<h1></h1>
+<p></p>
+<strong></strong>
+<i></i>
+<strike></strike>
+<mark></mark>
+<quote></quote>
+<cite></cite>
+<span style="color: white; background-color:blue; font-size: 32px; font-family: Arial"></span>
+ - Có thể khai báo font-family: Arial, Helvetica (Nếu máy ko đọc được chữ Arial thì sẽ chuyển sang Helvetica)
+ - Căn lề: (Có thể sử dụng left, right, center or justify)
+<span style ="text-align: center" </span>
+
+//6. There are 3 list types in html: Ordered list, Unordered list, Description list.
+
+ - Ordered list: (I, i, A, a, 1);
+    <ol type="I">
+        <li>Mục con 1</li>
+        <li>Mục con 2</li>
+        <li>Mục con 3</li>
+        <li>Mục con 4</li>
+        <li>Mục con 5</li>
+    </ol>
+
+ - Unordered list: (square, circle, none);
+    <ul style="list-style-type: square">
+        <li>Mục con 1</li>
+        <li>Mục con 2</li>
+        <li>Mục con 3</li>
+        <li>Mục con 4</li>
+        <li>Mục con 5</li>
+    </ul>
+
+ - Description list:
+    <p>Một website gồm có</p>
+    <dl>
+        <dt>HTML</dt>
+            <dd>- khung xương của website.</dd>
+        
+        <dt>CSS</dt>
+            <dd>- bộ da của website</dd>
+        
+        <dt>Javascript</dt>
+            <dd>- bộ cánh của website</dd>
+        
+        <dt>Ngôn ngữ server-side (ASP.NET, PHP, RUBY,..)</dt>
+            <dd>- linh hồn của website</dd>
+    </dl>
+
+ - Có thể xếp chồng danh sách:
+    <ul>
+        <li>WordPress
+            <ul>
+                <li>WordPress Themes</li>
+                <li>WordPress Plugin</li>
+            </ul>
+        </li>
+        <li>Front-end
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript (jQuery, AngularJS,..)</li>
+            </ul>
+        </li>
+    </ul>
+
+//7. Thẻ tạo liên kết và liên kết NEO.
+ - Thẻ tạo liên kết: ̣̣̣̣(_blank; _self; _top; _parent)
+    <p>Một siêu văn bản sẽ có các <a href="http://thachpham.com" title="Thach Pham Blog" target="_blank">siêu liên kết</a> để người đọc có thể truy cập một tài liệu khác.</p>
+
+ - Liên kết neo(Anchor Link)
+    Khu vực neo: <p id="noi-dung"> </p>
+    Liên kết neo: <a herf = "#noi-dung">xem thân bài</a>
+
+//8. Chèn tập tin kĩ thuật số vào file HTML
+    
+    Chèn ảnh:
+        <img src="http://i878.photobucket.com/albums/ab343/VampireDuracellBunny/hello-kitty.jpg" title="Hello Kitty" alt="Hello Kitty Vector" />
+    
+    Chèn video:
+        <video width="320" height="240" controls>
+            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ HTML5.
+        </video>
+
+    Chèn music:
+        <audio controls>
+            <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mp3">
+        Trình duyệt của bạn không hỗ trợ HTML5
+        </audio>
+
+    Chèn OBJECT:
+
+    Chèn tài liệu HTML:
+        <iframe src="http://thachpham.com" width="500px" height="800px" scrolling="auto"></iframe>
+
+//9. Trình bày văn bảng dạng bảng:
+
+//10. Tạo form nhập liệu:
+
+
