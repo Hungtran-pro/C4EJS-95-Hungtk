@@ -1,0 +1,16 @@
+div {
+    width: 150px;
+    height: 150px;
+}
+
+#box1 {
+    background-color: #333333;
+}
+
+#box2 {
+    background-color: blueviolet;
+    font-size: 32px;
+    border: 2px solid red;
+    padding: 6px;
+    margin: 5px;
+}

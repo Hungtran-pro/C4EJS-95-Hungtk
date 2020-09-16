@@ -44,7 +44,7 @@ New file -> name: [name].html
 <span style="color: white; background-color:blue; font-size: 32px; font-family: Arial"></span>
  - Có thể khai báo font-family: Arial, Helvetica (Nếu máy ko đọc được chữ Arial thì sẽ chuyển sang Helvetica)
  - Căn lề: (Có thể sử dụng left, right, center or justify)
-<span style ="text-align: center" </span>
+<span style ="text-align: center"> </span>
 
 //6. There are 3 list types in html: Ordered list, Unordered list, Description list.
 
