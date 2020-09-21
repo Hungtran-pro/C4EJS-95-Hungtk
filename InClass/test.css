@@ -144,25 +144,32 @@ body {
     background: #292b2f;
     padding: 10px 25px;
     color: #fff;
-    height: 240px;
+    height: 300px;
 }
 
 .header .name{
-    font-size: 52px;
+    font-size: 59px;
     text-transform: uppercase;
     font-weight: 700;
     color: #3525af;
 }
 
 .header .role{
+    color: #5143d4;
     margin-top: 10px;
     font-weight: 300;
-    font-size: 27px;
+    font-size: 30px;
 }
 
 .header .intro{
-    margin-top: 20px;
+    width: 400px;
+    margin-top: 15px;
     line-height: 26px;
+}
+
+.right_inner{
+    padding: 30px;
+    color: #292b2f;
 }
 
 .right_inner .education{
@@ -172,10 +179,11 @@ body {
 .right_inner .li_wrap {
     display: flex;
     margin-bottom: 15px;
+    margin-top: 30px;
 }
 
-.right_inner .date{
-    width: 125px;
+.right_inner .li_wrap .date{
+    width:  125px;
     color: #9153c9;
 }
 
@@ -194,6 +202,7 @@ body {
 
 .right_inner .li_wrap .info_content{
     margin-top: 15px;
+    line-height: 25px;
 }
 
 .right_inner .li_wrap .info:before{
@@ -207,3 +216,12 @@ body {
     border-radius: 50%;
 }
 
+.right_inner .li_wrap .info:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 2px;
+    height: 90px;
+    background: #9153c9;
+}
