@@ -1,4 +1,4 @@
-let h1 = document.getElementById('heading-1');
-
-console.log(h1);
-h1.innerHTML = "Hello, my name is HEADING LEVEL 1";
+const container = document.getElementById('monday');
+// for(let i = 0; i < 3; i++) {
+    container.insertAdjacentHTML("afterend", `<li>${i}</li>`);
+// }
