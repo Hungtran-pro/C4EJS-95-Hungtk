@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="test.js"></script>
 </head>
 <body>
-    <h1 id="monday"></h1>
+    <form>
+        <input type="text" name="id" placeholder="Enter the ID">
+        <input type="submit">
+      </form>
+      
+      <table>
+        <thead>
+          <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Comment</td>
+          </tr>
+        </thead>
+        <tbody data-sheetdb-url="https://sheetdb.io/api/v1/58f61be4dda40"
+               data-sheetdb-query-string="id">
+          <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{age}}</td>
+            <td>{{comment}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <script src="https://sheetdb.io/handlebars.js"></script>
 </body>
 </html>

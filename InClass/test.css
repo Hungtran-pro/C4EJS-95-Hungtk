@@ -1,111 +1,21 @@
-/*==Style cơ bản cho website==*/
-* {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.254em;
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-  color: #3b8bba;
-}
-a:hover,
-a:visited {
-  color: #265778;
+#a1 {
+  background-image: url("https://banner2.cleanpng.com/20180823/af/kisspng-google-logo-portable-network-graphics-image-google-g-5b7f62559be028.2112362515350749016385.jpg");
+  background-repeat: no-repeat;
+  /* background-size: 75px 75px; */
+  background-size: contain;
 }
 
-/*==Lên khung cho website==*/
-#container {
-  padding-left: 150px;
-  position: relative;
-  left: 0;
-  width: 100%;
-}
-#menu {
-  position: fixed;
-  height: 100%;
-  background-color: #191818;
-  width: 150px;
-  left: 0;
+#a2 {
+  background-image: url("https://banner2.cleanpng.com/20180823/af/kisspng-google-logo-portable-network-graphics-image-google-g-5b7f62559be028.2112362515350749016385.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: 75px 75px; */
+  border-radius: 20px;
 }
 
-#menu ul li {
-  line-height: 2.9em;
-  height: 2.9em;
-}
-
-#menu li a {
-  display: block;
-  color: #fff;
-  padding: 0 1em;
-  border-bottom: 1px solid #333;
-}
-
-#menu li:hover {
-  background-color: #454545;
-}
-
-/*==Trang trí khung content==*/
-#content {
-  padding: 1em 8em;
-}
-#header,
-.call-to-action {
-  text-align: center;
-}
-
-/*==Trang trí header của content==*/
-#header {
-}
-#slogan {
-  color: #8997a0;
-  font-size: 0.8em;
-}
-
-/*==Call to Action==*/
-.call-to-action {
-  padding: 1.5em 20%;
-  background: #efefef;
-  border: 1px solid#E8E8E8;
-}
-
-/*==Chia cột phần content==*/
-.row {
-  overflow: auto;
-  margin: 1.5em auto;
-}
-
-/*==Chia cột phần content==*/
-.row {
-  overflow: auto;
-  margin: 1.5em auto;
-}
-.row .col {
-  float: left;
-  width: 31.3333%;
-  margin-right: 2.99%;
-}
-.row .col:last-child {
-  float: right;
-  margin-right: 0;
-}
-
-/* Style cho ảnh */
-.row .col img {
-  float: left;
-  margin-right: 1em;
-}
-
-/*==Footer==*/
-#footer {
-  font-size: 85%;
-  border-top: 1px solid #e6e6e6;
-  color: #838383;
-  padding: 1em 3em;
+div {
+  width: 800px;
+  height: 300px;
+  margin-bottom: 5px;
+  border: green solid 2px;
 }

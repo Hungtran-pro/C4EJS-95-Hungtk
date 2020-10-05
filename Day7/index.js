@@ -1,10 +1,10 @@
-//1
+// // 1
 // var container = document.getElementById("list");
 // for (let i = 0; i < 3; i++) {
-//   container.insertAdjacentHTML("afterbegin", `<li>${i}</li>`);
+//   container.insertAdjacentHTML("beforebegin", `<li>${i}</li>`);
 // }
 
-//answer: 1 - d; 2 - b; 3 - c; 4 - a;s
+// answer: 1 - d; 2 - b; 3 - c; 4 - a;s
 
 //2
 // let timerId= setInterval(() => alert('Hello'), 3000);
@@ -105,20 +105,26 @@
 // });
 
 //12
-var newItem = document.getElementById("nameItem");
+var ItemsOnScreen = document.getElementById("List-Items");
 let listItems = ["bag", "pen", "pencilCase"];
-const addButton = document.getElementById("buttonAdd");
-addButton.addEventListener("click", () => {
-    newItem = document.getElementById("nameItem");
-    newItem = newItem.value.toLowerCase();
-    if(listItems.indexOf(newItem) === -1){
-        listItems.push(newItem);
-        console.log(listItems);
-    }
-    else{
-        console.log(`${newItem} is existed`);
-    }
-});
+console.log(listItems);
+console.log(ItemsOnScreen);
+for(let i = 0; i < listItems.length; i++){
+    ItemsOnScreen.innerHTML += `<li>${listItems[i]}</li>`;
+}
+console.log(ItemsOnScreen);
+// const addButton = document.getElementById("buttonAdd");
+// addButton.addEventListener("click", () => {
+//     newItem = document.getElementById("nameItem");
+//     newItem = newItem.value.toLowerCase();
+//     if(listItems.indexOf(newItem) === -1){
+//         listItems.push(newItem);
+//         console.log(listItems);
+//     }
+//     else{
+//         console.log(`${newItem} is existed`);
+//     }
+// });
 
-const item_list_ul = document.getElementById("ul_list_item");
-console.log(item_list_ul);
+// const item_list_ul = document.getElementById("ul_list_item");
+// console.log(item_list_ul);
